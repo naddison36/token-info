@@ -18,6 +18,8 @@ function getInfo(address token) external view returns (Info memory info)
 function getInfoBatch(address[] memory tokens) external view returns (Info[] memory infos)
 ```
 
+The ABI is in [bin/contracts/TokenInfo.abi](./bin/contracts/TokenInfo.abi)
+
 # Deployed contracts
 
 -   Mainnet [0xbA51331Bf89570F3f55BC26394fcCA05d4063C71](https://etherscan.io/address/0xba51331bf89570f3f55bc26394fcca05d4063c71)
