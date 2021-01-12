@@ -5,7 +5,7 @@
   "scripts": {
     "prettier": "prettier --write '**/*.{ts,md,sol}'",
     "compile": "npx hardhat compile",
-    "test": "npx hardhat test ./test/tokenInfoLocal.test.ts",
+    "test": "npx hardhat test ./test/tokenInfo.test.ts",
     "test:fork": "npx hardhat --network fork test ./test/tokenInfoFork.test.ts",
     "test:mainnet": "npx hardhat --network mainnet test ./test/tokenInfoMainnet.test.ts",
     "test:ropsten": "npx hardhat --network ropsten test ./test/tokenInfoRopsten.test.ts"

@@ -39,6 +39,12 @@ The HardHat config is [hardhat.config.ts](./hardhat.config.ts).
 
 # Testing
 
+To run tests against a local in-memory chain. Alternatively, run `npm run test`
+
+```
+npx hardhat test ./test/tokenInfo.test.ts
+```
+
 ## A fork of Mainnet
 
 Run a forked mainnet node locally on port 7545
@@ -53,7 +59,7 @@ npx hardhat --network fork test ./test/tokenInfoFork.test.ts
 
 ## Mainnet
 
-Run the mainnet tests against Ropsten
+Run the mainnet tests against Mainnet.
 
 ```
 export ETH_NODE=https://ropsten.infura.io/v3/yourApiKey // infura
