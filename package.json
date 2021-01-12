@@ -1,0 +1,33 @@
+{
+  "name": "tokeninfo",
+  "version": "0.0.1",
+  "description": "Ethereum token information",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier --write '**/*.{ts,md,sol}'",
+    "test": "hh test ./test/tokenInfoLocal.test.ts",
+    "test:fork": "hh --network fork test ./test/tokenInfoFork.test.ts",
+    "test:mainnet": "hh --network mainnet test ./test/tokenInfoMainnet.test.ts",
+    "test:ropsten": "hh --network ropsten test ./test/tokenInfoRopsten.test.ts"
+  },
+  "author": "Nick Addison",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.1",
+    "@typechain/ethers-v5": "^5.0.0",
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.2.0",
+    "@types/node": "^14.14.20",
+    "@unipeer/hardhat-typechain": "^0.3.2",
+    "chai": "^4.2.0",
+    "ethers": "^5.0.24",
+    "hardhat": "^2.0.7",
+    "mocha": "^8.2.1",
+    "prettier": "^2.2.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.3",
+    "ts-generator": "^0.1.1",
+    "ts-node": "^9.1.1",
+    "typechain": "^4.0.1",
+    "typescript": "^4.1.3"
+  }
+}
