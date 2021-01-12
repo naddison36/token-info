@@ -1,6 +1,7 @@
 node_modules
 .vscode
 artifacts
-bin
 cache
 types
+bin
+!bin/contracts/TokenInfo.abi
