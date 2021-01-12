@@ -1,6 +1,6 @@
-# On-Chain Token Information
+# Ethereum Token (ERC20) Information
 
-## Get symbol and name from a contract
+## Get `symbol` and `name` properties from Ethereum contracts
 
 -   checks if contract code exists at the address. If not, return blank `symbol` and `name` values.
 -   return `symbol` and `name` as a string. This means converting `bytes32` to `string` for some tokens. eg [Maker](https://etherscan.io/address/0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2)

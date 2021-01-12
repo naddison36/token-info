@@ -2,13 +2,13 @@
   "name": "tokeninfo",
   "version": "0.0.1",
   "description": "Ethereum token information",
-  "main": "index.js",
   "scripts": {
     "prettier": "prettier --write '**/*.{ts,md,sol}'",
-    "test": "hh test ./test/tokenInfoLocal.test.ts",
-    "test:fork": "hh --network fork test ./test/tokenInfoFork.test.ts",
-    "test:mainnet": "hh --network mainnet test ./test/tokenInfoMainnet.test.ts",
-    "test:ropsten": "hh --network ropsten test ./test/tokenInfoRopsten.test.ts"
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test ./test/tokenInfoLocal.test.ts",
+    "test:fork": "npx hardhat --network fork test ./test/tokenInfoFork.test.ts",
+    "test:mainnet": "npx hardhat --network mainnet test ./test/tokenInfoMainnet.test.ts",
+    "test:ropsten": "npx hardhat --network ropsten test ./test/tokenInfoRopsten.test.ts"
   },
   "author": "Nick Addison",
   "license": "MIT",
@@ -29,5 +29,6 @@
     "ts-node": "^9.1.1",
     "typechain": "^4.0.1",
     "typescript": "^4.1.3"
-  }
+  },
+  "keywords": ["Ethereum", "token", "symbol", "name", "ERC20", "contract"]
 }
